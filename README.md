@@ -9,9 +9,14 @@ ONNX and TensorRT inference demo for [CGI-Stereo](https://github.com/gangweiX/CG
 
 
 ## Requirements
+### ONNXRuntime demo
 - OpenCV
 - numpy
 - ONNXRuntime
+
+### TensorRT demo
+- OpenCV
+- numpy
 - TensorRT
 - pycuda
 
@@ -21,7 +26,7 @@ from [PINTO_model_zoo](https://github.com/PINTO0309/PINTO_model_zoo/tree/main/35
 ## Usage
 ### ONNXRuntime
 ```bash
-usage: demo.py [-h] [-m MODEL_PATH] [-l LEFT_IMAGE] [-r RIGHT_IMAGE] [-o OUTPUT_PATH]
+usage: demo_onnx.py [-h] [-m MODEL_PATH] [-l LEFT_IMAGE] [-r RIGHT_IMAGE] [-o OUTPUT_PATH]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -36,7 +41,7 @@ optional arguments:
 ```
 
 ### TensorRT
-#### Convert model
+#### Convert onnx model to tensorrt engine
 ```bash
 bash convert_onnx2trt.bash <onnx-model-path> <output-engine-path> 
 ```
