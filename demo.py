@@ -56,7 +56,7 @@ if __name__ == "__main__":
         "-m",
         "--model_path",
         type=str,
-        default="model.onnx",
+        default="cgi_stereo_sceneflow_480x640/cgi_stereo_sceneflow_480x640.onnx",
         help="ONNX model file path.")
     parser.add_argument(
         "-l",
